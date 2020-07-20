@@ -33,9 +33,9 @@ app.use('/api/tareas', require('./routes/tareas'));
 
 
 //#region INICIALIZACION DE SERVER - PUERTO
-
-app.listen(PORT, () => {
-  console.log(`server iniciado, en el puerto...${PORT}`);
+//0.0.0.0 para que el dominio lo asigne heroku
+app.listen(port, '0.0.0.0', () => {
+  console.log(`server iniciado, en el puerto...${port}`);
 });
 
 //#endregion
