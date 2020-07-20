@@ -16,7 +16,7 @@ app.use(express.json({extended: true}))
 
 
 //Puerto de la app
-const port = process.env.PORT;
+const port = process.env.PORT || 8000;
 
 //IMPORTANDO RUTAS
 
